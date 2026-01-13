@@ -10,7 +10,7 @@ public class CardCounter {
 	}
 	public CardCounter(UnitCard card,int count){
 		this.card = card;
-		this.count = count;
+		this.setCount(count);
 	}
 	public void setCount(int count){
 		this.count = Math.max(0,count);

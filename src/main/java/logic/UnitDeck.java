@@ -8,7 +8,7 @@ public class UnitDeck {
 
 
     public UnitDeck( String deckName) {
-        setDeckName(deckName);
+        this.setDeckName(deckName);
         this.cardsInDeck = new ArrayList<CardCounter>();
 
     }
@@ -18,7 +18,11 @@ public class UnitDeck {
     }
 
     public void setDeckName(String deckName) {
-        this.deckName = deckName;
+        if(deckName.isBlank()){
+            this.deckName = "Untitled Deck";
+        }else {
+            this.deckName = deckName;
+        }
     }
 
     public ArrayList<CardCounter> getCardsInDeck() {

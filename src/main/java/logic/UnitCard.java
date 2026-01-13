@@ -12,11 +12,11 @@ public class UnitCard {
 	}
 
 	public  UnitCard(String name,int bloodCost,int power ,int health,String flavorText){
-		this.name = name;
-		this.bloodCost = bloodCost;
-		this.power = power;
-		this.health = health;
-		this.flavorText = flavorText;
+		this.setName(name);
+		this.setBloodCost(bloodCost);
+		this.setPower(power);
+		this.setHealth(health);
+		this.setFlavorText(flavorText);
 	}
 
 	public  void setName(String newName){
